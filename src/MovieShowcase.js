@@ -1,5 +1,3 @@
-nes (16 sloc)  509 Bytes
-
 import React, { Component } from 'react';
 import MovieCard from './card-components/MovieCard.js'
 import movieData from './data.js'
