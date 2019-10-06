@@ -11,7 +11,7 @@ export default class MovieShowcase extends Component {
   render() {
     return (
       <div id="movie-showcase">
-        {this.props.generateMovieCards.map(MovieShowcase)}
+        {this.generateMovieCards()}
       </div>
     )
   }
