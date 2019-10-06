@@ -9,11 +9,10 @@ import five from '../assets/stars/5-stars.png'
 const imgMapper = {0: zero, 1: one, 2: two, 3: three, 4: four, 5: five};
 
 export default class CardBack extends Component {
-
-  generateRatingElement = () => {
+generateRatingElement = () => {
     // implement meeeee! See the readme for instructions
     if (this.props.IMDBRating !== null){
-      return <imag src={this.props.imgMapper} alt="" />
+      return <imag src={this.props.imgMapper} alt="" />;
     }
       return <h4>No Rating Found</h4>;
   };
