@@ -1,0 +1,273 @@
+{
+  "stats": {
+    "suites": 4,
+    "tests": 14,
+    "passes": 9,
+    "pending": 0,
+    "failures": 5,
+    "start": "2019-10-06T06:02:54.607Z",
+    "end": "2019-10-06T06:02:54.712Z",
+    "duration": 105
+  },
+  "tests": [
+    {
+      "title": "renders at least one <MovieCard /> component",
+      "fullTitle": "<MovieShowcase /> renders at least one <MovieCard /> component",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "renders 9 <MovieCard /> components",
+      "fullTitle": "<MovieShowcase /> renders 9 <MovieCard /> components",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "passes all 4 props to every component",
+      "fullTitle": "<MovieShowcase /> passes all 4 props to every component",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "has generated the correct prop values for the first movie",
+      "fullTitle": "<MovieShowcase /> has generated the correct prop values for the first movie",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected 'default' to equal 'choux-maru-istanbul'",
+        "showDiff": true,
+        "actual": "default",
+        "expected": "choux-maru-istanbul",
+        "stack": "AssertionError: expected 'default' to equal 'choux-maru-istanbul'\n    at Context.<anonymous> (test/0-MovieShowcase.test.js:42:43)"
+      }
+    },
+    {
+      "title": "has generated the correct prop values for the last movie",
+      "fullTitle": "<MovieShowcase /> has generated the correct prop values for the last movie",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected 'default' to equal 'the-trash-man'",
+        "showDiff": true,
+        "actual": "default",
+        "expected": "the-trash-man",
+        "stack": "AssertionError: expected 'default' to equal 'the-trash-man'\n    at Context.<anonymous> (test/0-MovieShowcase.test.js:49:44)"
+      }
+    },
+    {
+      "title": "assigns a default prop of 'Unknown' for the title prop",
+      "fullTitle": "<MovieCard /> assigns a default prop of 'Unknown' for the title prop",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "assigns a default prop of null for the IMDBRating prop",
+      "fullTitle": "<MovieCard /> assigns a default prop of null for the IMDBRating prop",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "assigns a default prop of ['No Genre(s) Found'] for the genres prop",
+      "fullTitle": "<MovieCard /> assigns a default prop of ['No Genre(s) Found'] for the genres prop",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "assigns a default prop of 'default' for the poster prop",
+      "fullTitle": "<MovieCard /> assigns a default prop of 'default' for the poster prop",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "uses the poster prop as a background image, rendering only the necessary HTML",
+      "fullTitle": "<CardFront /> uses the poster prop as a background image, rendering only the necessary HTML",
+      "duration": 10,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected '<div class=\"card-front\" style=\"background-image:url(prop)\"></div>' to equal '<div class=\"card-front\" style=\"background-image:url(you spin me right round)\"></div>'",
+        "showDiff": true,
+        "actual": "<div class=\"card-front\" style=\"background-image:url(prop)\"></div>",
+        "expected": "<div class=\"card-front\" style=\"background-image:url(you spin me right round)\"></div>",
+        "stack": "AssertionError: expected '<div class=\"card-front\" style=\"background-image:url(prop)\"></div>' to equal '<div class=\"card-front\" style=\"background-image:url(you spin me right round)\"></div>'\n    at Context.<anonymous> (test/2-CardFront.test.js:15:33)"
+      }
+    },
+    {
+      "title": "correctly renders the title prop",
+      "fullTitle": "<CardBack /> correctly renders the title prop",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "correctly renders the genres prop as comma seperated strings",
+      "fullTitle": "<CardBack /> correctly renders the genres prop as comma seperated strings",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected 'Rolling in the DeepNever gonna give you up,Never gonna let you down,Never gonna run around and desert you' to include 'Never gonna give you up, Never gonna let you down, Never gonna run around and desert you'",
+        "showDiff": false,
+        "actual": "Rolling in the DeepNever gonna give you up,Never gonna let you down,Never gonna run around and desert you",
+        "stack": "AssertionError: expected 'Rolling in the DeepNever gonna give you up,Never gonna let you down,Never gonna run around and desert you' to include 'Never gonna give you up, Never gonna let you down, Never gonna run around and desert you'\n    at Context.<anonymous> (test/3-CardBack.test.js:28:21)"
+      }
+    },
+    {
+      "title": "renders 'No Rating Found' in an <h4> if the IMDBRating prop is null",
+      "fullTitle": "<CardBack /> renders 'No Rating Found' in an <h4> if the IMDBRating prop is null",
+      "duration": 5,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "renders an <img> tag if the IMDBRating prop is valid",
+      "fullTitle": "<CardBack /> renders an <img> tag if the IMDBRating prop is valid",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected false to equal true",
+        "showDiff": true,
+        "actual": "false",
+        "expected": "true",
+        "stack": "AssertionError: expected false to equal true\n    at Context.<anonymous> (test/3-CardBack.test.js:37:46)"
+      }
+    }
+  ],
+  "pending": [],
+  "failures": [
+    {
+      "title": "has generated the correct prop values for the first movie",
+      "fullTitle": "<MovieShowcase /> has generated the correct prop values for the first movie",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected 'default' to equal 'choux-maru-istanbul'",
+        "showDiff": true,
+        "actual": "default",
+        "expected": "choux-maru-istanbul",
+        "stack": "AssertionError: expected 'default' to equal 'choux-maru-istanbul'\n    at Context.<anonymous> (test/0-MovieShowcase.test.js:42:43)"
+      }
+    },
+    {
+      "title": "has generated the correct prop values for the last movie",
+      "fullTitle": "<MovieShowcase /> has generated the correct prop values for the last movie",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected 'default' to equal 'the-trash-man'",
+        "showDiff": true,
+        "actual": "default",
+        "expected": "the-trash-man",
+        "stack": "AssertionError: expected 'default' to equal 'the-trash-man'\n    at Context.<anonymous> (test/0-MovieShowcase.test.js:49:44)"
+      }
+    },
+    {
+      "title": "uses the poster prop as a background image, rendering only the necessary HTML",
+      "fullTitle": "<CardFront /> uses the poster prop as a background image, rendering only the necessary HTML",
+      "duration": 10,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected '<div class=\"card-front\" style=\"background-image:url(prop)\"></div>' to equal '<div class=\"card-front\" style=\"background-image:url(you spin me right round)\"></div>'",
+        "showDiff": true,
+        "actual": "<div class=\"card-front\" style=\"background-image:url(prop)\"></div>",
+        "expected": "<div class=\"card-front\" style=\"background-image:url(you spin me right round)\"></div>",
+        "stack": "AssertionError: expected '<div class=\"card-front\" style=\"background-image:url(prop)\"></div>' to equal '<div class=\"card-front\" style=\"background-image:url(you spin me right round)\"></div>'\n    at Context.<anonymous> (test/2-CardFront.test.js:15:33)"
+      }
+    },
+    {
+      "title": "correctly renders the genres prop as comma seperated strings",
+      "fullTitle": "<CardBack /> correctly renders the genres prop as comma seperated strings",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected 'Rolling in the DeepNever gonna give you up,Never gonna let you down,Never gonna run around and desert you' to include 'Never gonna give you up, Never gonna let you down, Never gonna run around and desert you'",
+        "showDiff": false,
+        "actual": "Rolling in the DeepNever gonna give you up,Never gonna let you down,Never gonna run around and desert you",
+        "stack": "AssertionError: expected 'Rolling in the DeepNever gonna give you up,Never gonna let you down,Never gonna run around and desert you' to include 'Never gonna give you up, Never gonna let you down, Never gonna run around and desert you'\n    at Context.<anonymous> (test/3-CardBack.test.js:28:21)"
+      }
+    },
+    {
+      "title": "renders an <img> tag if the IMDBRating prop is valid",
+      "fullTitle": "<CardBack /> renders an <img> tag if the IMDBRating prop is valid",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected false to equal true",
+        "showDiff": true,
+        "actual": "false",
+        "expected": "true",
+        "stack": "AssertionError: expected false to equal true\n    at Context.<anonymous> (test/3-CardBack.test.js:37:46)"
+      }
+    }
+  ],
+  "passes": [
+    {
+      "title": "renders at least one <MovieCard /> component",
+      "fullTitle": "<MovieShowcase /> renders at least one <MovieCard /> component",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "renders 9 <MovieCard /> components",
+      "fullTitle": "<MovieShowcase /> renders 9 <MovieCard /> components",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "passes all 4 props to every component",
+      "fullTitle": "<MovieShowcase /> passes all 4 props to every component",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "assigns a default prop of 'Unknown' for the title prop",
+      "fullTitle": "<MovieCard /> assigns a default prop of 'Unknown' for the title prop",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "assigns a default prop of null for the IMDBRating prop",
+      "fullTitle": "<MovieCard /> assigns a default prop of null for the IMDBRating prop",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "assigns a default prop of ['No Genre(s) Found'] for the genres prop",
+      "fullTitle": "<MovieCard /> assigns a default prop of ['No Genre(s) Found'] for the genres prop",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "assigns a default prop of 'default' for the poster prop",
+      "fullTitle": "<MovieCard /> assigns a default prop of 'default' for the poster prop",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "correctly renders the title prop",
+      "fullTitle": "<CardBack /> correctly renders the title prop",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "renders 'No Rating Found' in an <h4> if the IMDBRating prop is null",
+      "fullTitle": "<CardBack /> renders 'No Rating Found' in an <h4> if the IMDBRating prop is null",
+      "duration": 5,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ]
+}
